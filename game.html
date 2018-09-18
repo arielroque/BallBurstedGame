@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+
+	<title>Ball bursted</title>
+
+	<style>
+		.menu {
+			float: left;
+			width: 140px;
+			height: 500px;
+			background: #fff;
+			font-size: 28px;
+			border: solid 1px #A2A2A2;
+		}
+
+		.game {
+			float: left;
+			width: 600px;
+			height: 500px;
+			background: url('images/cenary.png');
+			background-position: bottom;
+
+		}
+
+		.cenary{
+           
+		   margin: 40px auto;
+		   width: 900px;
+		   height: 500px;
+
+		}
+
+		#back{
+
+			position: absolute;
+			left: 40%;
+			bottom: 30px;
+			width: 180px;
+			font-size: 20px;
+
+		}
+
+		#game {
+			float: left;
+			color: red;
+			font-size: 20px;
+		}
+
+	
+	</style>
+
+	<script src="js/javascript.js"></script>
+
+</head>
+
+<body onload="startGame()">
+
+	<div class="cenary">
+
+		<div class="menu">
+
+			<table>
+				<tr>
+					<td> <img src="images/balao_azul_grande.png"></td>
+					<td><span id="qtdBall"></span></td>
+				</tr>
+			</table>
+
+			<br>
+			<table>
+				<tr>
+					<td> <img src="images/balao_azul_grande_estourado.png"></td>
+					<td><span id="qtdBallBursted"></span></td>
+				</tr>
+				</table>
+
+				<br>
+				<table style="width: 140px; height: 132px;">
+					<tr>
+						<td style="background: url('images/cronometer.png')">
+							<span id="time"style="padding-left:50px;"></span>
+						</td>
+					</tr>
+				</table>
+
+				<table style="width:140px; height:132px">
+
+					<tr>
+
+						 <td>
+                              <img src="images/refresh.png" style="padding-left:20px;" onclick="location.reload()">
+
+						 </td>
+					</tr>
+
+
+
+				</table>
+		</div>
+
+		<div id="game" class="game">
+
+		</div>
+
+		<button  id="back" onclick="location.href='index.html'">Back to Home</button>
+
+	</div>
+
+</body>
+
+</html>

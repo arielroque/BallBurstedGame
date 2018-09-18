@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+
+	<title>Ball Bursted</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+
+	<script language='Javascript'>
+
+		function start() {
+
+			var gameLevel = document.getElementById("levelSelect").value;
+
+			// pass the level with parameter
+
+			window.location.href = "game.html?" + gameLevel;
+		}
+
+	</script>
+
+	<style type="text/css">
+		body {
+
+			font-family: 'Kaushan Script', cursive;
+			background-image: url("images/cenary.png");
+			background-repeat: no-repeat;
+			background-size: 100% 140%;
+			
+
+		}
+
+		
+
+		.menu {
+
+			width: 500px;
+			height: 300px;
+			margin: 100px auto;
+			filter: alpha(opacity=105);
+			text-align: center;
+
+		}
+
+		#title {
+			text-align: center;
+			font-size: 80px;
+			color: yellow;
+
+		}
+
+		#btnStart {
+			width: 100px;
+			height: 80px;
+			padding: 10px auto;
+		}
+
+		#level {
+
+			font-size: 30px;
+			color: darkcyan;
+		}
+
+		#levelSelect {
+
+			width: 200px;
+			height: 30px;
+
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1 id="title">Ball Bursted</h1>
+
+	<div class="menu">
+		<p id="level">
+			<b>Level:</b>
+			<select id="levelSelect">
+				<option value="1">Easy</option>
+				<option value="2">Medium</option>
+				<option value="3">Hard</option>
+			</select>
+		</p>
+
+		<br>
+
+		<img id="btnStart" src="images/start.png" onclick="start()">
+
+	</div>
+
+</body>
+
+</html>
